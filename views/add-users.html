@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Welcome to my websit !!!">
+		<title>Bahaa Bakri</title>
+        <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="/css/404.css">
+        <link rel="stylesheet" type="text/css" href="/css/add-product.css">
+	</head>
+	<body style="overflow: auto;">
+        <header class="main-header">
+            <nav class="main-header__nav">
+                <ul class="main-header__item-list">
+                    <li class="main-header__item"><a class="active" href="/">Main</a></li>
+                    <li class="main-header__item"><a href="/admin/users">Add Users</a></li>
+                </ul>
+            </nav>
+        </header>
+		<form name="bahaa">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label>Username :</label><br>
+				<input class="in" type="text" name="user" placeholder="Enter your Username" maxlength="15">
+				<br>
+				<label>Password :</label><br>
+				<input class="in" type="password" name="pass" placeholder="Enter your Password" maxlength="10">
+				<br>
+				<select name="gender">
+					<label>Gender :</label>
+					<option value="male">Male</option>
+					<option value="female">Female</option><br>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Control button</legend>
+				<input type="checkbox" name="remember">
+				<label>remember this password</label><br>
+				<input class="sub" type="submit" value="Sign Up">
+				<input type="button" name="hello" value="Say Hello" onclick="bbb()"><br><hr>
+				<label>you can reset your information by click Reset</label>
+				<input class="rs"type="reset" value="Reset">
+				<br><hr>
+				<label>you can upload your file by click browse</label>
+				<input type="file">
+				<br>
+			</fieldset>
+			<fieldset>
+				<legend>Your Location</legend>
+				<label>you can click in the image to select your location</label><br><br>
+				<input class="lab" type="image" src="syria.jpg" alt="syria map" width="200" height="200"><br>
+				<input type="hidden" value="hiden button"><br>
+			</fieldset>
+			<fieldset>
+				<legend>Your Favorite</legend>
+				<label>select your favorite browser :</label><br>
+				<input type="radio" name="browse" value="1">Google chrome<br>
+				<input type="radio" name="browse" value="2">Opera<br>
+				<input type="radio" name="browse" value="3">Mozilla Firefox<br><hr>
+				<label>select your favorite mobile :</label><br>
+				<input type="radio" name="mobile" value="1">Sammsung<br>
+				<input type="radio" name="mobile" value="2">Iphone<br>
+				<input type="radio" name="mobile" value="3">Nokia
+				<br><hr>
+				<label>select your favorite operating system :</label><br>
+				<input type="checkbox" name="windows">Windows<br>
+				<input type="checkbox" name="linux">Linux<br>
+				<input type="checkbox" name="mac osx">Mac osx<br>
+			</fieldset>
+			<fieldset>
+				<legend>Your Latter</legend>
+				<textarea name="litter" rows="10" cols="50"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>The time send</legend>
+				<label>When send your information ?</label>
+				<select name="time" size="1">
+					<optgroup label="short time">
+						<option value="1" selected>now</option>
+						<option value="2">after a week</option>
+						<option value="3">after a month</option>
+					</optgroup>
+					<optgroup label="long time" disabled>
+						<option value="4">year</option>
+						<option value="5">two year</option>
+						<option value="6">three year</option>
+					</optgroup>
+				</select>
+			</fieldset>
+		</form>
+        <script src="/js/404.js"></script>
+        <script src="/js/add-product.js"></script>
+		
+	</body>
+	</html>
